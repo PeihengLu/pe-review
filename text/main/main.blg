@@ -1,0 +1,18 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[88] biber:340> INFO - === Tue Sep 24, 2024, 10:39:20
+[105] Biber.pm:419> INFO - Reading 'main.bcf'
+[173] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
+[186] Biber.pm:4419> INFO - Processing section 0
+[199] Biber.pm:4610> INFO - Looking for bibtex file '../prime-editing.bib' for section 0
+[202] bibtex.pm:1713> INFO - LaTeX decoding ...
+[216] bibtex.pm:1519> INFO - Found BibTeX data source '../prime-editing.bib'
+[277] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[277] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[277] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[277] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[287] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[289] bbl.pm:763> INFO - Output to main.bbl
+[289] Biber.pm:131> WARN - I didn't find a database entry for 'mathisMachineLearningPrediction2024' (section 0)
+[289] Biber.pm:131> WARN - I didn't find a database entry for 'yuPredictionEfficienciesDiverse2023' (section 0)
+[289] Biber.pm:133> INFO - WARNINGS: 2

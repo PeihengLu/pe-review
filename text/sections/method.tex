@@ -1,0 +1,13 @@
+\section{Methods}
+
+\subsection*{Data Acquisition and Preprocessing}
+
+The dataset used in this study was obtained from the DeepPrime and PRIDICT study\cite{mathisMachineLearningPrediction2024,yuPredictionEfficienciesDiverse2023}, which contains 220,000 and 20,000 prime editing guides, respectively. 
+
+\subsection*{Ensemble Learning}
+
+Three ensemble learning approaches were investigated in this study: weighted average, bagging and AdaBoost. The algorithms were implemented in Python, but without the use of Scikit-learn ensemble library, as it does not support having different types of base learners in the ensemble.  
+
+Details of the implementation can be found in \autoref{appendix:ensemble}.
+
+However, no significant difference in performance was observed among the three ensemble learning methods, possibly due to the high correlation in error between the base models (Add figure here). The weighted average method was chosen for the final implementation due to its simplicity and ease of interpretation.
