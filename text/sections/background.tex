@@ -2,11 +2,20 @@
 
 Prime editing is a versatile and precise genome editing technology that enables the introduction of all 12 possible base-to-base conversions as well as insertions and deletions without the need for double-strand breaks\cite{liudavidr.SearchreplaceGenomeEditing2019}. 
 
-The versatility of prime editors comes from the fusion of a reverse transcriptase (RT) and a Cas9 nickase (nCas9) to a prime editing guide RNA (pegRNA) (). After the guide RNA binds to the protospacer, the nCas9 creates a single-strand break in the complementary strand, which allows the RT to copy the edited sequence from the pegRNA into the target DNA. This mechanism enables theoretically any types of edits, as RT can be an arbitrary sequence of nucleotides\cite{liudavidr.SearchreplaceGenomeEditing2019}. 
+The versatility of prime editors comes from the fusion of a reverse transcriptase (RT) and a Cas9 nickase (nCas9) to a prime editing guide RNA (pegRNA) (\autoref{fig:prime-editing}). After the guide RNA binds to the protospacer, the nCas9 creates a single-strand break in the complementary strand, which allows the RT to copy the edited sequence from the pegRNA into the target DNA. This mechanism enables theoretically any types of edits, as RT can be an arbitrary sequence of nucleotides\cite{liudavidr.SearchreplaceGenomeEditing2019}.  
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{prime-editing-process.png}
+        \caption{Prime editing mechanism}
+        \label{fig:prime-editing}  
+    \end{subfigure}
+    \caption{(a) shows the mechanism of prime editing. The prime editing guide RNA (pegRNA) binds to the target DNA, and the nCas9 creates a single-strand break in the complementary strand. The reverse transcriptase (RT) then copies the edited sequence from the pegRNA into the target DNA.}
+    \label{fig:figure-1}
+\end{figure}
 
 More than 6,000 disorders are known to be caused by various types of mutations in the genome, with around 300 new genetic disorders being discovered each year\cite{petraityteGenomeEditingMedicine2021}. Up to 90\% of these disorder-inducing mutations can be corrected using prime editing\cite{kantorCRISPRCas9DNABaseEditing2020}. However, its clinical application is significantly limited by its relative low editing efficiency at certain target loci.  Empirical methods could be used to identify prime editing guides with high editing efficiency, but they are time-consuming and expensive. Therefore, in-silico prediction tools have garnered significant interest in the scientific community.
-
-
 
 \subsection*{In-silico Prime Editing Guide Design Tools}
 

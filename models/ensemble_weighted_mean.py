@@ -81,9 +81,9 @@ class EnsembleWeightedMean:
             'ridge': ridge_regression,
             'xgb': xgboost,
             'rf': random_forest,
-            'mlp': mlp,
-            'dp': deepprime,
-            'pd': pridict
+            # 'mlp': mlp,
+            # 'dp': deepprime,
+            # 'pd': pridict
         }
         self.n_regressors = len(self.base_learners)
         self.ensemble = [None for _ in range(self.n_regressors)]

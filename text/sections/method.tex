@@ -2,7 +2,7 @@
 
 \subsection*{Data Acquisition and Preprocessing}
 
-The dataset used in this study was obtained from the DeepPrime and PRIDICT study\cite{mathisMachineLearningPrediction2024,yuPredictionEfficienciesDiverse2023}, which contains 220,000 and 20,000 prime editing guides, respectively. 
+The dataset used in this study was obtained from the DeepPrime and PRIDICT study\cite{mathisPredictingPrimeEditing2023,mathisMachineLearningPrediction2024,yuPredictionEfficienciesDiverse2023}, which contains around 220,000 and 110,000 prime editing guides-target pairs, respectively. 
 
 \subsection*{Ensemble Learning}
 
@@ -10,4 +10,4 @@ Three ensemble learning approaches were investigated in this study: weighted ave
 
 Details of the implementation can be found in \autoref{appendix:ensemble}.
 
-However, no significant difference in performance was observed among the three ensemble learning methods, possibly due to the high correlation in error between the base models (Add figure here). The weighted average method was chosen for the final implementation due to its simplicity and ease of interpretation.
+However, no significant difference in performance was observed among the three ensemble learning methods ($p>0.1$, paired t-test across corresponding folds, \autoref{appendix:ensemble}), possibly due to the high correlation in error between the base models (Add figure here). The weighted average method was chosen for the final implementation due to its simplicity and ease of interpretation.
