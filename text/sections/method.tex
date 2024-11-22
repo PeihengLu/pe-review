@@ -6,6 +6,10 @@ The dataset used in this study was obtained from the DeepPrime and PRIDICT studi
 
 A set of functions were implemented to handle the conversion between formats required by different models. For datasets with fold information recorded, the corresponding trained models were preserved in the ensemble. While for datasets without fold information, a 5-fold cross-validation split used by DeepPrime and PRIDICT 2.0 was applied, and the models were retrained on the new folds.
 
+A standardized format was devised 
+
+Since the DeepPrime dataset does not contain a wide enough flank sequence of the target site for the PRIDICT model, padding was applied when converting the DeepPrime dataset to the PRIDICT format. 
+
 \subsection*{Ensemble Learning}
 
 Three ensemble learning approaches were investigated in this study: weighted average, bagging and AdaBoost. The algorithms were implemented in Python, but without the use of Scikit-learn ensemble library, as it does not support having different types of base learners in the ensemble.  
