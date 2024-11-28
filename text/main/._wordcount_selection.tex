@@ -1,1 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}\usepackage{color}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[sorting=none]{biblatex}
+\usepackage[raggedrightboxes]{ragged2e}
+\setlength{\headheight}{15pt}
+\usepackage{fancyhdr}
+
+\usepackage{lineno}
+\linenumbers
+
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
+
+% figure and bibliography source
+\addbibresource{../prime-editing.bib}
+% add figure path
+\graphicspath{ {../figures/} }
+% reduce margin
+\usepackage[margin=1in]{geometry}
+% increase title font size
+\usepackage{titling}
+\pretitle{\begin{center}\Huge\bfseries}
+
+\pagestyle{fancy}
+
+\setlist[enumerate]{itemsep=0mm}
+
+\title{PE Ensemble: An Interactive Review of In-silico Prime Editing Guide Design Tools}
+% \author{Peiheng Lu}
+
+\begin{document}
+% no date
+\date{}
+\maketitle
+
+\begin{abstract}
     Prime editing is a novel genome editing technology that enables precise base editing without the need for double-strand breaks. The design of prime editing guides is a critical step in the prime editing workflow. In this review, we evaluate the performance of several in-silico prime editing guide design tools. We compare the quality of the guide designed by these tools, and to improve the usage of these state of art tools, they were reimplemented and integrated into a single web base application. Additionally, we provided the ability to aggregate the results from multiple tools using ensemble learning to improve the overall guide design quality.
+    Thus, with the on and off target activity of prime editing quantified, we can provide a complete overview of the outcome of using a specific pegRNA sequence on a specific target loci in a specific cell line. This should noticeably improve the safety and efficiency of prime editing, and thus accelerate its clinical application.
+    Thus, with the on and off target activity of prime editing quantified, we can provide a complete overview of the outcome of using a specific pegRNA sequence on a specific target loci in a specific cell line. This should noticeably improve the safety and efficiency of prime editing, and thus accelerate its clinical application.
+
+    \textbf{Keywords:} Prime editing, Machine Learning, in-silico tools, Ensemble Learning
+\end{abstract}
+
+\newpage
+
+\input{../sections/background.tex}
+\input{../sections/method.tex}
+\input{../sections/results.tex}
+\input{../sections/discussion.tex}
+
+\newpage
+\appendix
+
+\input{../sections/appendix.tex}
+
+\newpage
+\printbibliography
+\end{document}
